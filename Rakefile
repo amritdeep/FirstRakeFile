@@ -58,8 +58,12 @@ namespace :evening do
 
 end
 
-
-
+namespace :all_day do
+	desc "A Day"
+	task :day => ['morning:ready_for_work', 'evening:sleep'] do
+		puts "All day"	
+	end
+end
 
 
 
