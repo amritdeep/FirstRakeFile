@@ -4,6 +4,8 @@ file "hello.tmp" => "tmp" do
 	sh "echo 'Hello' >> 'tmp/hello.tmp'"
 end
 
+task :default => 'morning:ready_for_work'
+
 namespace :morning do
 	
 	desc "Turn Off Alarm"
