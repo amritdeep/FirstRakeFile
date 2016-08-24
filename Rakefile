@@ -29,5 +29,9 @@ namespace :morning do
 	task :ready_for_work => [:turn_off_alarm, :groom_myself, :make_coffee] do
 		puts "Ready for Work"
 	end
+end
 
+desc "Go to home"
+task :go_to_home do
+	puts "Going Home"
 end
