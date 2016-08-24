@@ -17,3 +17,9 @@ task :groom_myself do
 	puts "showered"
 	puts "shaved"
 end
+
+desc "Make Coffee"
+task :make_coffee do
+	cups = ENV["COFFEE_CUPS"] || 2
+	puts "Made #{cups} cups of coffee. Shakes are gone."
+end
