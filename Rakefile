@@ -42,6 +42,11 @@ task :take_rest do
 	puts "Take a rest for #{min} min"
 end
 
+desc "Cook Dinner"
+task :cook_dinner do
+	puts "Cooking Dinner"
+end
+
 
 
 
