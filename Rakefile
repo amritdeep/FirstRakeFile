@@ -35,3 +35,16 @@ desc "Go to home"
 task :go_to_home do
 	puts "Going Home"
 end
+
+desc "Take rest"
+task :take_rest do
+	min = ENV["TIME"] || 60
+	puts "Take a rest for #{min} min"
+end
+
+
+
+
+
+
+
