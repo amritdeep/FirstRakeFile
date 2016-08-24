@@ -3,9 +3,8 @@ Learning to Build Rake File
 
 # Run following Rake Task 
 
-rake 
-rake
-rake all_day:day             # A Day
+rake  
+rake all_day:day             # A Day  
 rake evening:cook_dinner     # Cook Dinner
 rake evening:go_to_home      # Go to home
 rake evening:sleep           # Sleep
