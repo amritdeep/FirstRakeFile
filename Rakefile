@@ -47,6 +47,11 @@ task :cook_dinner do
 	puts "Cooking Dinner"
 end
 
+desc "Sleep"
+task :sleep => [:go_to_home, :take_rest, :cook_dinner] do
+	puts "Sleeping"
+end
+
 
 
 
