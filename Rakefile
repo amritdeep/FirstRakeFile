@@ -31,27 +31,30 @@ namespace :morning do
 	end
 end
 
-desc "Go to home"
-task :go_to_home do
-	puts "Going Home"
-end
+namespace :evening do
+	
+	desc "Go to home"
+	task :go_to_home do
+		puts "Going Home"
+	end
 
-desc "Take rest"
-task :take_rest do
-	min = ENV["TIME"] || 60
-	puts "Take a rest for #{min} min"
-end
+	desc "Take rest"
+	task :take_rest do
+		min = ENV["TIME"] || 60
+		puts "Take a rest for #{min} min"
+	end
 
-desc "Cook Dinner"
-task :cook_dinner do
-	puts "Cooking Dinner"
-end
+	desc "Cook Dinner"
+	task :cook_dinner do
+		puts "Cooking Dinner"
+	end
 
-desc "Sleep"
-task :sleep => [:go_to_home, :take_rest, :cook_dinner] do
-	puts "Sleeping"
-end
+	desc "Sleep"
+	task :sleep => [:go_to_home, :take_rest, :cook_dinner] do
+		puts "Sleeping"
+	end
 
+end
 
 
 
