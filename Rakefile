@@ -23,3 +23,8 @@ task :make_coffee do
 	cups = ENV["COFFEE_CUPS"] || 2
 	puts "Made #{cups} cups of coffee. Shakes are gone."
 end
+
+desc "Ready for Work"
+task :ready_for_work => [:turn_off_alarm, :groom_myself, :make_coffee] do
+	puts "Ready for Work"
+end
